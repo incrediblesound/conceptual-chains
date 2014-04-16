@@ -1,0 +1,6 @@
+h2 Master Concepts
+div(ng-repeat='node in data')
+  h3 {{node.name}}
+  a(href='/viewNode/{{node.name}}') View
+  |  -
+  a(href='/delete/{{node.name}}') Delete

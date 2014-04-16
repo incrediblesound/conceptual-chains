@@ -1,0 +1,16 @@
+extends layout
+
+block content
+  div.container
+    div.row
+      h1 Conceptual Chains with Neo4j and Angular.js
+      ul
+        li
+          a(href='/') Home
+        li
+          a(href='/add') Add a Master Category
+    div(ng-view)
+
+  script(src='/js/angular/angular.js')
+  script(src='/js/app.js')
+  script(src='/js/controllers.js')
