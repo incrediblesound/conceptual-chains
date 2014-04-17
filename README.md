@@ -7,3 +7,9 @@ The app saves chains of concepts in graph form using the Neo4j graph database. A
 Master Node (most general concept) -> Child -> Child -> Terminal Child (most specific concept)
 
 Possibilities for further development include automatic chain linking via shared child concepts to create convergent concept chains. Divergent chains are way too mind blowing for me to consider at this point.
+
+To fiddle thusly   
+1) clone the app  
+2) npm install  
+3) start neo4j  
+4) ascend into the highest reaches of the universe
