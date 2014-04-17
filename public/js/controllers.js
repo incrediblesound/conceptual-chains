@@ -16,3 +16,16 @@ function NewMasterCtrl ($scope, $http, $location) {
 		})
 	}
 }
+
+function ViewNode ($scope, $http, $location, $routeParams, $route) {
+  $scope.form = {};
+  var id = $routeParams.id;
+  $http.get('/api/chain/' + id).success(function (data) {
+    $scope.data = {master: id, children: data.data};
+  });
+  $scope.addChild = function() {
+    $http.post('/api/newChild/'+id, $scope.form).success(function (data) {
+      $route.reload();
+    })
+  }
+}

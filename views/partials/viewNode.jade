@@ -1,0 +1,8 @@
+h2 {{data.master}}
+label(for='name')
+input(ng-model='form.name', name='name')
+button(ng-click='addChild()', class='btn btn-default') New Child
+ul
+  div(ng-repeat='node in data.children')
+    li {{node.name}}
+      span {{name.distance}}

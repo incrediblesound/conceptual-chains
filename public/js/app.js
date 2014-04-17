@@ -11,6 +11,10 @@ config(['$routeProvider','$locationProvider', function ($routeProvider, $locatio
       templateUrl: '/partials/newMaster',
       controller: NewMasterCtrl
     }).
+    when('/viewNode/:id', {
+      templateUrl: '/partials/viewNode',
+      controller: ViewNode
+    }).
     otherwise({
       redirectTo: '/'
     });
