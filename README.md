@@ -2,7 +2,7 @@ Conceptual Chains
 =================
 An app even Plato would be proud of, Conceptual Chains is my first application using Node/Express and Angular.js. It is based on the <a href='https://github.com/btford/angular-express-blog'>Angular-Express-Blog</a> by Brian Ford, which is an excellent jumping off point for folks who want to learn Angular. 
 
-The app saves chains of concepts in graph form using the Neo4j graph database. At the home page one can initialize new "master" concepts, view and delete chains. The chain view allows users to add child concepts on to the master, creating concept chains of the following structure:
+The app saves chains of concepts in graph form using the Neo4j graph database. At the home page one can initialize new "master" concepts, view and delete chains. The chain view allows users to append child concepts on to the terminal node of a chain, creating concept chains of the following structure:
 
 Master Node (most general concept) -> Child -> Child -> Terminal Child (most specific concept)
 
