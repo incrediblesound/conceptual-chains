@@ -1,8 +1,9 @@
-h2 {{data.master}}
 label(for='name')
 input(ng-model='form.name', name='name')
 button(ng-click='addChild()', class='btn btn-default') New Child
+h2 {{data.master}}
 ul
   div(ng-repeat='node in data.children')
-    li {{node.name}}
-      span {{name.distance}}
+    li <strong>{{node.name}}</strong>
+      br
+      span  distance from master: {{node.distance}}
